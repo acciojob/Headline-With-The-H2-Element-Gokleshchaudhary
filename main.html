@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Document</title>
+    <title>Acciojob Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font style */
+            background-color: #f4f4f4; /* Background color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding */
+        }
+        h2 {
+            color: #333; /* Subheading color */
+            text-align: center; /* Center align */
+        }
+        table {
+            width: 100%; /* Full width */
+            border-collapse: collapse; /* Collapse borders */
+            margin-top: 20px; /* Margin on top */
+        }
+        th, td {
+            padding: 10px; /* Padding in cells */
+            border: 1px solid #ddd; /* Border for cells */
+        }
+        th {
+            background-color: #f2f2f2; /* Header background color */
+        }
+        tr:hover {
+            background-color: #e2e2e2; /* Row hover effect */
+        }
+    </style>
 </head>
 <body>
-    <h2>Acciojob</h2> <!-- Yeh line tumhare subheading ke liye hai -->
-    <table border="1">
+    <h2>Acciojob</h2>
+    <table>
         <tr>
             <th>Component</th>
             <th>Description</th>
@@ -21,5 +48,15 @@
             <td>The content of the h2 element must be the word "Acciojob"</td>
         </tr>
     </table>
+
+    <script>
+        // Function to alert when a table row is clicked
+        const rows = document.querySelectorAll('tr');
+        rows.forEach(row => {
+            row.addEventListener('click', () => {
+                alert('You clicked on: ' + row.innerText);
+            });
+        });
+    </script>
 </body>
 </html>
